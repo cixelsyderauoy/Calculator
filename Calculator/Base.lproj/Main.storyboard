@@ -45,7 +45,7 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="top" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="n4j-eZ-iST" userLabel="NumberPad">
-                                <rect key="frame" x="189" y="165" width="223" height="343"/>
+                                <rect key="frame" x="189" y="165" width="223" height="413"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="rT7-3P-ccv" userLabel="Row 1">
                                         <rect key="frame" x="0.0" y="0.0" width="223" height="63"/>
@@ -238,6 +238,23 @@
                                             </button>
                                         </subviews>
                                     </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="Xz5-p0-N3J" userLabel="Row 6">
+                                        <rect key="frame" x="0.0" y="350" width="220" height="63"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S79-W5-yKM" userLabel="=">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="63"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="220" id="JoX-B3-R3f"/>
+                                                    <constraint firstAttribute="height" constant="63" id="ZZ7-cs-g6W"/>
+                                                </constraints>
+                                                <state key="normal" image="clear"/>
+                                                <connections>
+                                                    <action selector="onClearPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DcW-1h-XyA"/>
+                                                    <action selector="onEqualPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="inZ-3L-qmg"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
                                 </subviews>
                             </stackView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ground" translatesAutoresizingMaskIntoConstraints="NO" id="Sr0-Ow-5pJ">
@@ -246,7 +263,7 @@
                                     <constraint firstAttribute="height" constant="51" id="YOg-b9-fXg"/>
                                 </constraints>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="123456" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYl-mn-Qfh">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kYl-mn-Qfh">
                                 <rect key="frame" x="189" y="95" width="223" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="223" id="Ihh-Vz-UA2"/>
@@ -299,6 +316,7 @@
         <image name="9" width="111" height="114"/>
         <image name="add" width="111" height="114"/>
         <image name="backpanel" width="620" height="938"/>
+        <image name="clear" width="333" height="114"/>
         <image name="counter" width="516" height="133"/>
         <image name="divide" width="111" height="114"/>
         <image name="equal" width="111" height="114"/>
